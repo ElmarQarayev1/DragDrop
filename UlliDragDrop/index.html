@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    i{
+        text-align: center;
+        color: aliceblue;
+        padding-top: 15px;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(147, 92, 9);
+    }
+    #fileInput{
+        display: none;
+    
+    }
+    
+</style>
+<body>
+    <i class="fa-solid fa-file"></i>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-4">
+                <div class="drop-area">
+                    <h3>Todo</h3>
+                    <hr>
+                    <ul class="list-group task-list" id="todoTaskList">
+                        <li draggable="true" class="list-group-item">An item</li>
+                        <li draggable="true" class="list-group-item">A second item</li>
+                        <li draggable="true" class="list-group-item">A third item</li>
+                        <li draggable="true" class="list-group-item">A fourth item</li>
+                        <li draggable="true" class="list-group-item">And a fifth one</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 task-list">
+                <div class="drop-area">
+                    <h3>Done</h3>
+                    <hr>
+                    <ul class="list-group" id="doneTaskList">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <form action="">
+                    <input type="text" id="emailInput">
+                    <hr>
+                    <input multiple type="file" id="fileInput">
+                    <img src="" />
+                    <hr>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/UlliDragDrop/js/index.js"></script>
+</body>
+
+</html>
